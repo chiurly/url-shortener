@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortener.Api", "UrlShortener.Api\UrlShortener.Api.csproj", "{7670AE8A-9B07-4223-85CF-93B252C24BBA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "UrlShortener.Database", "UrlShortener.Database\UrlShortener.Database.sqlproj", "{A737F964-6F46-46E2-BD1E-876038FE752C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7670AE8A-9B07-4223-85CF-93B252C24BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7670AE8A-9B07-4223-85CF-93B252C24BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7670AE8A-9B07-4223-85CF-93B252C24BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7670AE8A-9B07-4223-85CF-93B252C24BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A737F964-6F46-46E2-BD1E-876038FE752C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1FC3774-858A-4F1A-904F-6392339C0DD6}
+	EndGlobalSection
+EndGlobal
