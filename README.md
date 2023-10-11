@@ -1,6 +1,6 @@
 # URL Shortener
 
-URL Shortener is a web API created with ASP.NET Core and Dapper. It can take a long URL as input and generate a short URL that redirects to the long URL.
+URL Shortener is a web API created with ASP.NET Core 6 and Dapper. It can take a long URL as input and generate a short URL that redirects to the long URL.
 
 ## Getting started
 
