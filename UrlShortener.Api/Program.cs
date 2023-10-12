@@ -21,7 +21,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
 app.MapShortenedUrlsEndpoints();
 app.MapGet("/{path}", RedirectToOriginalUrl);
 
