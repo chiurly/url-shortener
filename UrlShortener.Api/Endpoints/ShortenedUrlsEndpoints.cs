@@ -1,6 +1,5 @@
 ﻿using UrlShortener.Api.Services;
 using UrlShortener.Api.Models;
-using Azure.Core;
 
 namespace UrlShortener.Api.Endpoints;
 
