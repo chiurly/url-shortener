@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
+using System.Diagnostics;
 using UrlShortener.Api.Models;
 
 namespace UrlShortener.Api.Services;
@@ -46,6 +47,9 @@ public class ShortenedUrlsService : IShortenedUrlsService
 
     public async Task<ShortenedUrl> Create(ShortenUrlRequest request)
     {
+        Stopwatch stopwatch = new Stopwatch();
+        stopwatch.Start();
+
         var getQuery = "SELECT Id, OriginalUrl, GeneratedPath, CreatedAt FROM ShortenedUrls WHERE GeneratedPath = @generatedPath";
         var insertQuery = "INSERT INTO ShortenedUrls (OriginalUrl, GeneratedPath) VALUES (@url, @generatedPath)";
         
@@ -54,6 +58,10 @@ public class ShortenedUrlsService : IShortenedUrlsService
 
         while (true)
         {
+            if (stopwatch.Elapsed.TotalSeconds > 10) {
+                throw new TimeoutException("Generating path exceeded time limit");
+            }
+
             generatedPath = GeneratePath();
             
             if (reservedPaths.Contains(generatedPath))
